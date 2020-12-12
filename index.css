@@ -307,6 +307,18 @@ footer h6 {
     color: #fff;
 }
 
+.nav img.logo {
+    width: 10%;
+    height: 10vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    object-position: center;
+}
+
+footer.h6.last {
+	font-size: 100%;
+}
 
 @media (max-width: 720px) {
     header {
@@ -368,3 +380,33 @@ footer h6 {
     }
 }
 
+.ml-auto ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.ml-auto ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.ml-auto ul {
+    margin-top: 20px;
+}
+
+footer ul {
+    margin-top: 20px;
+}
+footer ul li {
+    list-style: none;
+    padding: 0px 15px;
+    color: #fff;
+    display: inline-block;
+}
+footer h6 {
+    margin: 0;
+    padding: 0;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
