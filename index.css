@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/*default version*/
+@font-face {
+	font-family: 'Avenir Next';
+	/* src: url('fonts/lovely_font.eot');  */
+	src: 
+		local('Avenir Next-'),
+		local('Avenir-Next-'),
+		url('./Next/AvenirNextLTPro-Regular.otf') 
+		format('opentype');
+}
+/*bold version*/
+@font-face {
+	font-family: 'Avenir Next';
+	/* src: url('fonts/lovely_font_bold.eot');  */
+	src: 
+		local('Avenir Next Bold'),
+        local('Avenir-Next-Bold'),
+		url('./Next/AvenirNextLTPro-Bold.otf') 
+		format('opentype');
+	font-weight: bold;
+}
+/*container element*/
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+
+.contain {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+.nav img.logo {
+    width: 10%;
+    height: auto;
+}
+
+/* .nav .ml-auto {
+    width: 30%;
+}
+.nav .ml-auto .img {
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 7vh;
+} */
+
+.nav .ml-auto {
+    display: flex;
+}
+.nav .ml-auto a {
+    display: inline-block;
+    height: 42px;
+    width: 137px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.nav .ml-auto a img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.nav.fixed {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    background: #fff;
+}
+
+header {
+    display: flex;
+    min-height: 95vh;
+}
+header .header-text {
+    flex: 1;
+    background: #2EB875;
+}
+header .header-img {
+    flex: 1;
+    max-height: 70vh;
+}
+
+header .header-img img {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+header h3 {
+    color: #fff;
+    font-size: 250%;
+    margin-top: 30%;
+    width: 80%;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+
+header p {
+    line-height: 150%;
+    font-size: 95%;
+    margin-left: 2%;
+    color: #fff;
+}
+
+header .link {
+    display: flex;
+    margin-left: 2%;
+}
+header .link a {
+    display: inline-block;
+    height: 42px;
+    width: 137px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+header .link a img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .sec-header {
+    display: none;
+} */
+.sec-header .row img {
+    height: 20vh;
+    width: auto;
+    overflow-x: hidden;
+}
+.sec-header .row h4 {
+    font-size: 110%;
+    font-weight: 600;
+}
+.sec-header .row p {
+    font-size: 90%;
+    line-height: 150%;
+}
+
+
+
+.mockup {
+    background: #D9FDE5;
+    margin: 10% 0;
+    border-radius: 4px;
+}
+.mockup img.large {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    margin-top: -20%;
+}
+.mockup .sec h4 {
+    margin-top: 20%;
+    font-size: 165%;
+}
+.mockup .sec a {
+    display: inline-block;
+    height: 42px;
+    margin-top: -20%;
+    width: 137px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.mockup .sec a img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 100%;
+    margin-top: -50%;
+    margin-left: -10%;
+    height: auto;
+}
+.mockup .sec .link {
+    display: flex;
+    margin-left: 2%;
+    padding-top: 7%;
+}
+.mockup .sec p {
+    font-size: 110%;
+    line-height: 150%;
+}
+
+
+.last .row i {
+    padding: 10px;
+    border-radius: 50%;
+    color: #a1c2f2;
+    margin-bottom: 15%;
+}
+.last .row h4 {
+    font-size: 105%;
+    margin-top: 5%;
+}
+.last .row p {
+    font-size: 85%;
+    line-height: 150%;
+}
+
+
+.desc {
+    background: #6675ff;
+    height: 40vh;
+    text-align: center;
+}
+.desc .row {
+    padding-top: 8%;
+}
+.desc .row a {
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+}
+.desc h4 {
+    font-weight: 600;
+    color: #fff;
+}
+.desc p {
+    color: #fff;
+}
+
+
+
+.summary {
+    background: #2EB875;
+}
+.summary .link {
+    display: flex;
+    margin-left: 2%;
+    padding-top: 7%;
+}
+/* .summary .link {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 2%;
+    width: 60%;
+} */
+.summary .link a {
+    display: inline-block;
+    height: 42px;
+    width: 137px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.summary .link a img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+.summary h4 {
+    font-weight: 600;
+    color: #fff;
+    padding-top: 7%;
+}
+.summary .text {
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+footer {
+    min-height: 20vh;
+    background: #000;
+}
+footer i {
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0 10px;
+}
+footer h6 {
+    margin-top: 20px;
+    line-height: 150%;
+    color: #fff;
+}
+
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .header-text {
+        display: a;
+    }
+    header h3 {
+        font-size: 250%;
+        margin-top: 20%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    header .link {
+        margin-bottom: 10%;
+    }
+    header .header-img img {
+        height: 40vh;
+    }
+    .mockup img.large {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20%;
+    }
+    .mockup .sec h4 {
+        margin-top: 10%;
+        font-size: 165%;
+        font-weight: 600;
+    }
+    .mockup .sec .link {
+        display: flex;
+        margin-left: 4%;
+        padding-top: 15%;
+    }
+    
+
+    .summary .text .link{
+        padding-left: 10%;
+    }
+    .summary .text {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        margin-top: 15%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .nav img.logo {
+        width: 30%;
+        padding: 10px 0;
+        height: auto;
+    }
+    .nav .ml-auto {
+        display: none;
+    }
+}
+
